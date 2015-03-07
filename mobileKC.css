@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'LIGHTWEIGHT-SERIF';
+  src: url('LIGHTWEIGHT-SERIF.ttf');
+}
+
+
+.ctr{
+	margin-top: 40%;
+	margin-bottom:30%;
+
+}
+
+#textRight{
+	margin-top:50%;
+
+	 -webkit-animation: movingLeft 3s normal;
+	 -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+   animation-fill-mode: forwards;
+}
+
+#textLeft{
+	margin-top:50%;
+	 -webkit-animation: movingRight 3s normal;
+	 -webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+   animation-fill-mode: forwards;
+
+}
+
+#fade{
+	-webkit-animation: fade 3s normal;
+}
+
+#order{
+}
+
+/*=================================*/
+
+
+ @-webkit-keyframes movingLeft {
+  0% {
+    -webkit-transform: translate(5em,0);
+  }
+  100% {
+    -webkit-transform: translate(-4.0em,0);
+  }
+}
+
+@-webkit-keyframes movingRight {
+  0% {
+    -webkit-transform: translate(-5em,0);
+  }
+  100% {
+    -webkit-transform: translate(4em,0);
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+  	opacity: 0; 
+  }
+  100% {
+  	opacity: 1;
+  }
+}
+
